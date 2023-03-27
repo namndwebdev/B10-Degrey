@@ -1,5 +1,17 @@
+.slider {
+  margin-top: 90px;
+}
 .thumbnail-slider {
   width: 100%;
+}
+.voucher-item h3 {
+  font-size: 17px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  height: 40px;
+  margin-bottom: 0;
 }
 
 .thumbnail-slider:nth-child(2) {
@@ -28,11 +40,11 @@
   position: relative;
 }
 .voucher-item-info {
-  overflow: auto;
+  overflow: hidden;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  max-height: 1400px;
+  -webkit-line-clamp: 2;
+  min-height: 40px;
 }
 
 .voucher-item-button {
