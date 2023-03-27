@@ -100,8 +100,9 @@
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
   font-weight: 500;
-  padding: 12px 10px 4px 10px;
-  height: 51.2px;
+  padding: 12px 10px 2px 10px;
+  /* height: 51.2px; */
+  color: #000;
 }
 
 .product-detail-infomation-price {
@@ -141,7 +142,6 @@
 .suggest-product-set {
   display: flex;
   justify-content: space-between;
-  overflow: scroll;
 }
 
 .suggest-product-img {
@@ -156,6 +156,7 @@
 .suggest-product {
   background-color: #f5f5f5;
   /* max-height: 1400 px; */
+  margin-bottom: 10px;
 }
 
 @media (max-width: 576px) {
