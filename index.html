@@ -1,56 +1,934 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <!-- star header -->
-    <div class="headerd-flex align-items-center justify-content-center nodemy-header">
-      <nav class="navbar navbar-expand-lg bg-warning ">
-        <div class="container-fluid  d-md-flex align-items-md-center justify-content-md-center">
-          <a class="navbar-brand" href="#">
-            NAV
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#my-menu" aria-controls="my-menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="my-menu">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Sản Phẩm</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Store</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Giới Thiệu</a>
-                  </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Tìm Kiếm Sản Phẩm" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css-homepage/global.css" />
+    <link rel="stylesheet" href="/css-homepage/homepage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div style="z-index: 10; position: relative">
+      <div w3-include-html="header.html"></div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="slider">
+          <img
+            src="/image-homepage/image/1656a7546ee3b5bdecf2__1__7ca7e8721ade40eeb6498e0447de4e9f.webp"
+            alt=""
+            class="thumbnail-slider"
+          />
+          <img
+            src="/image-homepage/image/ee400e442f6df233ab7c1_9ef92529017c4115864db586f08dff34.webp"
+            alt=""
+            class="thumbnail-slider"
+          />
+        </div>
+        <div class="voucher">
+          <h2 class="voucher-title">ĐẶC QUYỀN CHO BẠN HÔM NAY!</h2>
+          <div class="voucher-list-item">
+            <div class="voucher-item">
+              <h3>Giao hàng cứ để Xoài lo</h3>
+              <p class="voucher-item-info">
+                Freeship cho hoá đơn mua hàng 1 triệu (không áp dụng với các
+                khuyến mãi khác)
+              </p>
+              <button class="voucher-item-button">Sao chép mã</button>
+            </div>
+            <div class="voucher-item">
+              <h3>Degrey giao hoả tốc tại Sài Gòn</h3>
+              <p class="voucher-item-info">
+                Xoài bếu tặng ngay mã giảm giá phí ship. Áp dụng cho hoá đơn
+                500.000 VNĐ
+              </p>
+              <button class="voucher-item-button">Sao chép mã</button>
+            </div>
+            <div class="voucher-item">
+              <h3>Tặng 125.000đ</h3>
+              <p class="voucher-item-info">
+                Áp dụng đặc biệt cho đơn hàng từ 2,5 triệu đồng.
+              </p>
+              <button class="voucher-item-button">Sao chép mã</button>
+            </div>
+            <div class="voucher-item">
+              <h3>Khuyến mãi đến 10%</h3>
+              <p class="voucher-item-info">
+                Mã giảm 10% cho hoá đơn mua hàng trên 5 triệu đồng
+              </p>
+              <button class="voucher-item-button">Sao chép mã</button>
+            </div>
           </div>
         </div>
-      </nav>
-    </div>
-   <!-- end header -->
-
-   <div class="row">
-      <div class="col-12 col-md-4" style="order: 2">
-          <div class="anh">A</div>
+        <div class="product" id="product">
+          <div class="product-category">
+            <h2 class="product-category-one">DEGREY.MADMONKS</h2>
+            <a href="" class="product-category-seeall">Xem tất cả</a>
+          </div>
+          <div class="product-detail">
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/a.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href="">
+                    ÁO CROPTOP THỂ THAO DEGREY.MADMONKS VIETNAM 84 - CDV84
+                  </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-salesale">380,000<span>đ</span></p>
+                <p class="product-detail-cost">440,000<span>đ</span></p>
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/b.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Áo thể thao Degrey.Madmonks Vietnam 84 - DV84 </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-salesale">380,000<span>đ</span></p>
+                <p class="product-detail-cost">440,000<span>đ</span></p>
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/c.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href="">
+                    Áo khoác da Degrey.Madmonks Biker Jacket V2.0 - JBK 2.0
+                  </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">1,200,000 <span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/d.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Degrey.Madmonks Quần Disco - QDC </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">580,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/e.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Degrey.Madmonks Áo Khoác Báo - AKB </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">650,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+          </div>
+          <div class="product-detail">
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/F.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href="">
+                    Degrey.Madmonks Quần Baggy Jean Dark Grey - DMBJ
+                  </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">680,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/g.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Degrey.Madmonks Áo khoác Bomber Lông - JBB </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">650,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/h.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Degrey.Madmonks Nón Trucker - DMMC </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">320,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/i.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Degrey.Madmonks Jacket Biker - JBK </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">1,000,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">580,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/j.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href="">Degrey.Madmonks Black Mamba skinny - DMMP</a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">380,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+          </div>
+          <div class="product-seemore">
+            <button class="product-seemore-button">
+              <span class="product-seemore-a">XEM THÊM SẢN PHẨM</span>
+              <span class="product-seemore-b">DEGREY.MADMONKS</span>
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-category">
+            <h2 class="product-category-one">BALO | BACKPACKS</h2>
+            <a href="" class="product-category-seeall">Xem tất cả</a>
+          </div>
+          <div class="product-detail">
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/a1.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Túi Da Degrey Travel Leather Bag - TVB </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-salesale">990,000<span>đ</span></p>
+                <p class="product-detail-cost">1,200,000<span>đ</span></p>
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/b1.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Balo Degrey Drawstring Backpack - DSBP </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-salesale">190,000<span>đ</span></p>
+                <p class="product-detail-cost">350,000 <span>đ</span></p>
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/c1.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Balo Degrey Leather Flap Backpack - DLFB </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-salesale">580,000<span>đ</span></p>
+                <p class="product-detail-cost">600,000<span>đ</span></p>
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/d1.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Degrey Leather Basic Balo - LBB </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">430,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/e1.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Basic Backpack Degrey - BBD </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">420,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+          </div>
+          <div class="product-detail">
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/f1.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Basic Backpack Degrey Trắng - BBD Trắng </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">420,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/g1.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Basic Backpack Degrey Xám - BBD Xám </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">420,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/h1.jpeg"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Balo Degrey Quằng Quện - BQQ </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">420,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/i1.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Degrey Letter Backpack - DLBP </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">420,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/j1.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Degrey Nano Backpack - DNN </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">480,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+          </div>
+          <div class="product-seemore">
+            <button class="product-seemore-button">
+              <span class="product-seemore-a">XEM THÊM SẢN PHẨM</span>
+              <span class="product-seemore-b">BALO | BACKPACKS</span>
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-category">
+            <h2 class="product-category-one">TÚI | BAG</h2>
+            <a href="" class="product-category-seeall">Xem tất cả</a>
+          </div>
+          <div class="product-detail">
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/a2.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Túi Da Degrey Leather ToteBook ss2 - DLT ss2 </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-salesale">420,000<span>đ</span></p>
+                <p class="product-detail-cost">480,000<span>đ</span></p>
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/b2.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Túi Da Degrey Travel Leather Bag - TVB </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-salesale">990,000<span>đ</span></p>
+                <p class="product-detail-cost">1,200,000<span>đ</span></p>
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/c2.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Túi Da Degrey Leather Long Tote - DLLT </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-salesale">330,000<span>đ</span></p>
+                <p class="product-detail-cost">450,000<span>đ</span></p>
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/d2.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Túi Da Degrey Leather Basic Bag - DLBB </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-salesale">380,000<span>đ</span></p>
+                <p class="product-detail-cost">420,000<span>đ</span></p>
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/e2.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Túi Degrey Box Bag Họ - BBH </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-salesale">320,000<span>đ</span></p>
+                <p class="product-detail-cost">380,000<span>đ</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="product-detail">
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/f2.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Balo Degrey Drawstring Backpack - DSBP</a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-salesale">190,000<span>đ</span></p>
+                <p class="product-detail-cost">350,000<span>đ</span></p>
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/g2.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> ÁO Degrey Leather ToteBook - DLT </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-salesale">380,000<span>đ</span></p>
+                <p class="product-detail-cost">450,000<span>đ</span></p>
+              </div>
+            </div>
+            <!-- <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/h.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href="">
+                    ÁO CROPTOP THỂ THAO DEGREY.MADMONKS VIETNAM 84 - CDV84
+                  </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">380,000<span>đ</span></p>
+                <p class="product-detail-cost">440,000<span>đ</span></p>
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/i.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href="">
+                    ÁO CROPTOP THỂ THAO DEGREY.MADMONKS VIETNAM 84 - CDV84
+                  </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">380,000<span>đ</span></p>
+                <p class="product-detail-cost">440,000<span>đ</span></p>
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/j.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href="">
+                    ÁO CROPTOP THỂ THAO DEGREY.MADMONKS VIETNAM 84 - CDV84
+                  </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">380,000<span>đ</span></p>
+                <p class="product-detail-cost">440,000<span>đ</span></p>
+              </div>
+            </div> -->
+          </div>
+          <div class="product-seemore">
+            <button class="product-seemore-button">
+              <span class="product-seemore-a">XEM THÊM SẢN PHẨM</span>
+              <span class="product-seemore-b">TÚI | BAG</span>
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-category">
+            <h2 class="product-category-one">ÁO THUN | TSHIRT</h2>
+            <a href="" class="product-category-seeall">Xem tất cả</a>
+          </div>
+          <div class="product-detail">
+            <div class="product-detail-infomation">
+              <span class="product-detail-soldout">Tạm hết hàng</span>
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/a3.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Áo Thun Basic Degrey rêu - ATBD rêu </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">190,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">1,200,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <span class="product-detail-soldout">Tạm hết hàng</span>
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/b3.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Áo Thun Basic Degrey Kem - ATBD Kem </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">190,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">350,000 <span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <span class="product-detail-soldout">Tạm hết hàng</span>
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/c3.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Áo Thun Gân Degrey - ATGD </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">290,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">600,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <span class="product-detail-soldout">Tạm hết hàng</span>
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/d3.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Áo Thun Basic Degrey Xám - ATBD Xám </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">190,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <span class="product-detail-soldout">Tạm hết hàng</span>
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/e3.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href=""> Áo Tay Dài Căn Bản Xám - TDCB Xám </a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">250,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">440,000<span>đ</span></p> -->
+              </div>
+            </div>
+          </div>
+          <div class="product-seemore">
+            <button class="product-seemore-button">
+              <span class="product-seemore-a">XEM THÊM SẢN PHẨM</span>
+              <span class="product-seemore-b">ÁO THUN | TSHIRT</span>
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-category">
+            <h2 class="product-category-one">QUẦN | PANTS</h2>
+            <a href="" class="product-category-seeall">Xem tất cả</a>
+          </div>
+          <div class="product-detail">
+            <div class="product-detail-infomation">
+              <!-- <span class="product-detail-soldout">Tạm hết hàng</span> -->
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/a4.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href="">Quần Dù Túi Hộp Degrey - QTH</a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">520,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">1,200,000<span>đ</span></p> -->
+              </div>
+            </div>
+          </div>
+          <div class="product-seemore">
+            <button class="product-seemore-button">
+              <span class="product-seemore-a">XEM THÊM SẢN PHẨM</span>
+              <span class="product-seemore-b">QUẦN | PANTS</span>
+            </button>
+          </div>
+        </div>
+        <div class="product" id="xoai">
+          <div class="product-category">
+            <h2 class="product-category-one">XOÀI NÈ</h2>
+            <a href="" class="product-category-seeall">Xem tất cả</a>
+          </div>
+          <div class="product-detail">
+            <div class="product-detail-infomation">
+              <!-- <span class="product-detail-soldout">Tạm hết hàng</span> -->
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/a5.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href="">Trà Xoài Cam Sả - TXCS</a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">90,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">1,200,000<span>đ</span></p> -->
+              </div>
+            </div>
+            <div class="product-detail-infomation">
+              <!-- <span class="product-detail-soldout">Tạm hết hàng</span> -->
+              <div class="product-detail-infomation-imgname">
+                <a href="">
+                  <img
+                    src="/image-homepage/image/img product/b5.webp"
+                    alt=""
+                    class="product-detail-img"
+                  />
+                </a>
+                <h3 class="product-detail-name">
+                  <a href="">Xoài Mực - XM</a>
+                </h3>
+              </div>
+              <div class="product-detail-infomation-price">
+                <p class="product-detail-sale">120,000<span>đ</span></p>
+                <!-- <p class="product-detail-cost">1,200,000<span>đ</span></p> -->
+              </div>
+            </div>
+          </div>
+          <div class="product-seemore">
+            <button class="product-seemore-button">
+              <span class="product-seemore-a">XEM THÊM SẢN PHẨM</span>
+              <span class="product-seemore-b">XOÀI NÈ</span>
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-md-4" style="order: 1">B</div>
-      <div class="col-12 col-md-4" style="order: 3">C</div>
-   </div>
-</body>
+      <div class="suggest-product">
+        <div class="container">
+          <h2 class="suggest-product-title">Set đồ gợi ý</h2>
+          <div class="suggest-product-set">
+            <div class="suggest-product-img">
+              <img
+                src="/image-homepage/image/img product/a6.webp"
+                alt=""
+                class="img"
+              />
+            </div>
+            <div class="suggest-product-img">
+              <img
+                src="/image-homepage/image/img product/b6.jpg"
+                alt=""
+                class="img"
+              />
+            </div>
+            <div class="suggest-product-img">
+              <img
+                src="/image-homepage/image/img product/c6.webp"
+                alt=""
+                class="img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div w3-include-html="footer.html"></div>
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute("w3-include-html");
+          if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = "Page not found.";
+                }
+                /* Remove the attribute, and call this function once more: */
+                elmnt.removeAttribute("w3-include-html");
+                includeHTML();
+              }
+            };
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+          }
+        }
+      }
+      includeHTML();
+    </script>
+  </body>
 </html>
