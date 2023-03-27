@@ -1,0 +1,10 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nodemy-header #my-menu .nav-link{
+    text-align: right;
+}
+.anh{
+    width: 200px;
+}
