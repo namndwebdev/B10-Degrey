@@ -29,6 +29,7 @@ body{
 .container_header{
     background-color: white;
     height: 90px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 .menu a{
     text-decoration: none;
