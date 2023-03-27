@@ -15,15 +15,14 @@ dong 4
 dong 5
 dong 6
 
-==================
-dong 7
-dong 8
-dong 9
-dong 10
-=================
-dong 7  Lam 
-dong 8  Lam
-dong 9 Lam
-dong 10 Lam
-==================
-aaaaaaa thoi doi
+Nam
+Nam
+Nam
+Nam
+Nam
+Nam
+Nam
+Nam
+Nam
+Nam
+Nam
