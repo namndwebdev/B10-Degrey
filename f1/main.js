@@ -17,12 +17,12 @@ dong 6
 
 ==================
 dong 7
-dong 8
-dong 9
-dong 10
-=================
-dong 7  Lam 
-dong 8  Lam
+Toan1
+TOAN2
+TOAN3
+TOAN4
+TOAN5
+TOAN5
 dong 9 Lam
 dong 10 Lam
 ==================
